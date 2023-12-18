@@ -1,0 +1,106 @@
+.nav-bar-container {
+  width: 100vw;
+  height: var(--header-size);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.desktop-container .header-bar {
+  width: 100%;
+  height: 100%;
+  padding-inline: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desktop-container .logo .logo-name {
+  font-size: var(--txy-f-l);
+  font-family: var(--txy-font-logo);
+}
+
+.desktop-container .search-bar {
+  position: relative;
+  width: 16rem;
+  height: 2rem;
+}
+
+.desktop-container .search-bar .icon {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-40%);
+}
+
+.desktop-container .search-bar .icon img {
+  width: 1rem;
+}
+
+.desktop-container .search-bar input {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  color: var(--txy-blue-4);
+}
+
+.desktop-container .search-bar input::placeholder {
+  font-size: var(--txy-f-xs);
+  font-weight: 400;
+  color: var(--txy-blue-4);
+  opacity: 0.5;
+}
+
+/* Side panel styling */
+.side-panel img {
+  width: 2rem;
+}
+
+.side-panel {
+  width: 4rem;
+  height: calc(100vh - var(--header-size));
+  position: relative;
+  left: 1rem;
+}
+
+.side-panel .panel-container {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  position: relative;
+  top: 2rem;
+  flex-direction: column;
+  background-image: linear-gradient(to top, var(--txy-blue-3), var(--txy-blue-4));
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.side-panel .panel-container .item {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.side-panel .panel-container .item .with-hover {
+  display: none;
+}
+
+.side-panel .panel-container .item:hover .without-hover {
+  display: none;
+}
+
+.side-panel .panel-container .item:hover .with-hover {
+  display: block;
+}
+
+.side-panel .panel-container .item:hover {
+  border-right: 1px solid var(--txy-blue-1);
+}

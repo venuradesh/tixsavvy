@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;500;600;700&display=swap");
+
+:root {
+  --txy-blue-1: #5fcdd9;
+  --txy-blue-2: #213140;
+  --txy-blue-3: #032340;
+  --txy-blue-4: #021526;
+  --txy-white: #ffffff;
+
+  /* typography */
+  --txy-font-main: "Poppins", sans-serif;
+  --txy-font-logo: "Kaushan Script", cursive;
+
+  --txy-f-xs: 0.7rem;
+  --txy-f-s: 0.9rem;
+  --txy-f-n: 1rem;
+  --txy-f-m: 1.5rem;
+  --txy-f-l: 2.5rem;
+
+  /* meta stylings */
+  --header-size: 4.375rem; /* 70px */
+  --side-panel: 3rem;
+}
+
+@media only screen and (max-width: 1080px) {
+  :root {
+    --txy-f-xs: 0.6rem;
+    --txy-f-s: 0.8rem;
+    --txy-f-n: 0.92rem;
+    --txy-f-m: 1.2rem;
+    --txy-f-l: 2rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  :root {
+    --txy-f-xs: 0.6rem;
+    --txy-f-s: 0.7rem;
+    --txy-f-n: 0.8rem;
+    --txy-f-m: 1.1rem;
+    --txy-f-l: 1.8rem;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-size: var(--txy-f-n);
+  font-family: var(--txy-font-main);
+  background-color: var(--txy-blue-4);
+  color: var(--txy-white);
+}
