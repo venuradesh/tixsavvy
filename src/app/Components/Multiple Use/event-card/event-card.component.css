@@ -1,0 +1,97 @@
+.card-container {
+  width: 16rem;
+  height: 22rem;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: var(--txy-blue-3);
+  box-shadow: 0 0 6px 0 var(--txy-blue-1);
+}
+
+.card-container .cover {
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+
+.card-container .cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+
+.card-container .event-type {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: var(--txy-f-xs);
+  background-color: var(--txy-blue-1);
+  color: var(--txy-blue-4);
+  padding: 0.3rem 1rem;
+  border-top-left-radius: 6px;
+}
+
+.card-container .content-container {
+  width: 100%;
+  height: 50%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-container .content-container .title {
+  font-size: var(--txy-f-m);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--txy-blue-1);
+}
+
+.card-container .content-container .location-time .item img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.card-container .content-container .location-time {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.card-container .content-container .item {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  font-size: var(--txy-f-xs);
+  font-weight: 100;
+}
+
+.card-container .content-container .price-btn-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.card-container .content-container .price-btn-container .price {
+  font-size: var(--txy-f-xs);
+  font-weight: 100;
+}
+
+.card-container .content-container .price-btn-container .price span {
+  font-size: var(--txy-f-n);
+  color: var(--txy-blue-1);
+}
+
+.card-container .content-container .price-btn-container .btn {
+  background-color: var(--txy-blue-1);
+  color: var(--txy-blue-4);
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+  border-bottom-right-radius: 6px;
+  cursor: pointer;
+}
+
+.card-container .content-container .price-btn-container .btn:hover {
+  transform: scale(1.02);
+}

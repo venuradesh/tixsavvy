@@ -1,0 +1,115 @@
+.home-component {
+  width: 100%;
+  height: max-content;
+  margin-bottom: 5rem;
+}
+
+.home-component .featured-cover-container {
+  background-color: red;
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+
+.home-component .featured-cover-container .img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home-component .featured-cover-container .img .bg-img {
+  width: 100%;
+  height: 100%;
+  /* background-image: url("../../../assets/Images/Profile-picture.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  position: absolute; */
+}
+
+.home-component .featured-cover-container .img .bg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-component .featured-cover-container .img .bg-tint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--txy-blue-4);
+  opacity: 0.7;
+}
+
+.home-component .featured-cover-container .featuring {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: var(--txy-blue-1);
+  color: var(--txy-blue-4);
+  padding: 0.5rem 2rem;
+}
+
+.home-component .featured-cover-container .content-container {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 20%;
+}
+
+.home-component .featured-cover-container .content-container img {
+  width: 1rem;
+}
+
+.home-component .featured-cover-container .content-container .title {
+  font-size: var(--txy-f-m);
+  text-transform: uppercase;
+  color: var(--txy-blue-1);
+  font-weight: 700;
+}
+
+.home-component .featured-cover-container .content-container .context {
+  font-size: var(--txy-f-xs);
+  font-weight: 300;
+  margin-top: 0.7rem;
+}
+
+.home-component .featured-cover-container .content-container .date-time {
+  display: flex;
+  margin-top: 0.7rem;
+  column-gap: 2rem;
+  font-size: var(--txy-f-xs);
+}
+
+.content-container .date-time .item {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+
+.home-component .cards-container {
+  margin-top: 2rem;
+}
+
+.home-component .cards-container .trending {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.home-component .cards-container .title {
+  font-size: var(--txy-f-m);
+  font-weight: 600;
+  color: var(--txy-blue-1);
+}
+
+.home-component .cards-container .border {
+  width: 100%;
+  height: 3px;
+  background-color: var(--txy-blue-1);
+}
