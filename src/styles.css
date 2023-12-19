@@ -68,3 +68,15 @@ body {
   background-color: var(--txy-blue-2);
   border-radius: 50px;
 }
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--txy-blue-1);
+  color: var(--txy-blue-4);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+}
