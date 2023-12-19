@@ -19,7 +19,7 @@
 
   /* meta stylings */
   --header-size: 4.375rem; /* 70px */
-  --side-panel: 3rem;
+  --side-panel: 5rem;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -58,4 +58,13 @@ body {
   font-family: var(--txy-font-main);
   background-color: var(--txy-blue-4);
   color: var(--txy-white);
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--txy-blue-2);
+  border-radius: 50px;
 }

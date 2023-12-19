@@ -1,0 +1,12 @@
+.app-component {
+  width: calc(100vw - var(--side-panel) - 2rem);
+  /* height: 100vh; */
+  position: relative;
+  top: var(--header-size);
+  left: var(--side-panel);
+  /* background-color: red; */
+  padding-inline: 2rem;
+  padding-right: 0rem;
+  padding-top: 1rem;
+  z-index: 0;
+}
