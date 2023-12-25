@@ -1,6 +1,6 @@
 <div class="event-container">
   <div class="cover-container">
-    <div class="back">
+    <div class="back" (click)="handleBack()">
       <img src="../../../assets/Icons/back.png" alt="back" />
       <span>Back</span>
     </div>
@@ -21,7 +21,7 @@
     </div>
     <div class="booking-container">
       <span>Only 15 Seats left, Hurry Up!</span>
-      <div class="btn">Book tickets now!</div>
+      <div class="btn" (click)="bookNowClickedFunc()">Book tickets now!</div>
     </div>
   </div>
   <div class="content-container">
@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="booking-btn">
-        <div class="btn">Book tickets now!</div>
+        <div class="btn" (click)="bookNowClickedFunc()">Book tickets now!</div>
       </div>
     </div>
     <div class="time-prices">
@@ -57,7 +57,7 @@
       </div>
       <div class="prices-container">
         <div class="title">Ticket Prices</div>
-        <div class="prices-container">
+        <div class="price">
           <div class="bronze item">
             <span>Bronze</span>
             <span>LKR 1000.00</span>
@@ -74,4 +74,7 @@
       </div>
     </div>
   </div>
+</div>
+<div class="book-now-container" *ngIf="bookNowClicked">
+  <txy-book-now (closeClicked)="handleCloseClick($event)"></txy-book-now>
 </div>
