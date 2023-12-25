@@ -8,5 +8,8 @@
   padding-inline: 2rem;
   padding-right: 0rem;
   padding-top: 1rem;
+}
+
+.nav-bar {
   z-index: 0;
 }

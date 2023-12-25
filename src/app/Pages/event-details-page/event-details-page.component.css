@@ -26,6 +26,7 @@
   column-gap: 1rem;
   color: var(--txy-blue-4);
   z-index: 1;
+  cursor: pointer;
 }
 
 .event-container .cover-container .back img {
@@ -203,4 +204,30 @@
 .content-container .time-prices .countdown-container .countdown .separator {
   font-size: 2rem;
   color: var(--txy-blue-1);
+}
+
+.content-container .time-prices .prices-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.content-container .time-prices .prices-container .title {
+  font-size: var(--txy-f-m);
+  color: var(--txy-blue-1);
+}
+
+.content-container .time-prices .prices-container .price {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container .time-prices .prices-container .price .item {
+  width: 15rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--txy-blue-1);
+  font-weight: 100;
 }
