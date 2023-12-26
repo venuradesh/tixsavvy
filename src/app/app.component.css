@@ -13,3 +13,16 @@
 .nav-bar {
   z-index: 0;
 }
+
+@media only screen and (max-width: 680px) {
+  .app-component {
+    width: 100vw;
+    left: 0;
+    padding-inline: 2rem;
+  }
+
+  .footer-container {
+    width: 100vw;
+    padding-inline: 0;
+  }
+}

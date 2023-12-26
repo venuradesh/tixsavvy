@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: 'txy-nav-bar',
+  selector: "txy-nav-bar",
   standalone: true,
-  imports: [],
-  templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.css'
+  imports: [CommonModule],
+  templateUrl: "./nav-bar.component.html",
+  styleUrl: "./nav-bar.component.css",
 })
 export class NavBarComponent {
+  hamburgerClicked: boolean = true;
 
+  handleHamburgerClick(): void {
+    this.hamburgerClicked = !this.hamburgerClicked;
+  }
 }
