@@ -9,7 +9,7 @@ import { CommonModule } from "@angular/common";
   styleUrl: "./nav-bar.component.css",
 })
 export class NavBarComponent {
-  hamburgerClicked: boolean = true;
+  hamburgerClicked: boolean = false;
 
   handleHamburgerClick(): void {
     this.hamburgerClicked = !this.hamburgerClicked;
