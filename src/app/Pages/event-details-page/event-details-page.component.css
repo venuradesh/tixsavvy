@@ -231,3 +231,117 @@
   border-bottom: 1px solid var(--txy-blue-1);
   font-weight: 100;
 }
+
+@media only screen and (max-width: 1220px) {
+  .event-container .content-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    row-gap: 5rem;
+    padding-inline: 2rem;
+  }
+
+  .event-container .content-container .desc-container {
+    width: 100%;
+  }
+
+  .event-container .cover-container .event-poster .main-header .name {
+    font-size: var(--txy-f-m);
+  }
+
+  .event-container .cover-container .event-poster .main-header .organized-by {
+    font-size: var(--txy-f-s);
+  }
+
+  .event-container .content-container .time-prices {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .event-container .cover-container .event-poster {
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  .event-container .cover-container .event-poster .main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    row-gap: 0.5rem;
+  }
+
+  .event-container .cover-container .booking-container {
+    top: 1rem;
+  }
+
+  .event-container .content-container .time-prices {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .event-container .cover-container .event-poster .poster {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .event-container .cover-container {
+    height: 30rem;
+  }
+
+  .event-container .cover-container .event-poster {
+    width: 100%;
+  }
+
+  .event-container .content-container {
+    align-items: center;
+  }
+
+  .event-container .content-container .time-prices {
+    width: max-content;
+  }
+
+  .event-container .content-container .time-prices .countdown-container {
+    align-items: center;
+  }
+
+  .event-container .content-container .time-prices .prices-container {
+    width: 100%;
+    align-items: center;
+  }
+
+  .event-container .content-container .desc-container {
+    align-items: center;
+  }
+
+  .event-container .content-container .desc-container .desc {
+    text-align: center;
+  }
+
+  .event-container .content-container .desc-container .date-time {
+    align-items: center;
+  }
+
+  .event-container .content-container .desc-container .booking-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .event-container .content-container .desc-container .btn {
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding: 0.5rem 1.5rem;
+  }
+}
