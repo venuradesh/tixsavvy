@@ -125,15 +125,18 @@
   height: calc(100vh + var(--header-size));
   transition: all 0.3s ease-in-out;
   position: relative;
+  pointer-events: none;
 }
 
 .mobile-container.active {
   backdrop-filter: blur(6px);
+  pointer-events: all;
 }
 
 .mobile-container .header-bar {
   display: none;
   height: var(--header-size);
+  pointer-events: all;
 }
 
 .mobile-container .header-bar .span-container {
@@ -166,7 +169,7 @@
 
 .mobile-container .span-container.active div:nth-of-type(2) {
   transform-origin: center;
-  transform: translateY(4px) rotateZ(-45deg);
+  transform: translateY(3px) rotateZ(-45deg);
 }
 
 .mobile-container .content-container {
@@ -192,6 +195,9 @@
 .mobile-container .content-container .item {
   width: 100%;
   height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-size: var(--txy-f-m);
   cursor: pointer;

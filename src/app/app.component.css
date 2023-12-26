@@ -18,7 +18,8 @@
   .app-component {
     width: 100vw;
     left: 0;
-    padding-inline: 2rem;
+    padding-inline: 0;
+    /* padding-inline: 2rem; */
   }
 
   .footer-container {
